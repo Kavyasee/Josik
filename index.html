@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joesal's Cricket World</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #e8f5e9;
+            margin: 20px;
+        }
+
+        header {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav a {
+            color: green;
+            margin: 12px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid lightgray;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid green;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightgreen;
+        }
+
+        img {
+            width: 200px;
+            height: 130px;
+            margin: 10px;
+        }
+
+        input, select {
+            padding: 8px;
+            margin: 8px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+
+        footer {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="home">
+    <h1>JOESAL'S CRICKET WORLD</h1>
+    <p>Welcome to the World of Cricket!</p>
+</header>
+
+<nav>
+    <a href="#players">Player Table</a>
+    <a href="#rules">Cricket Rules</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#legends">Cricket Legends</a>
+    <a href="#booking">Book Tickets</a>
+</nav>
+
+<section id="players">
+    <h2>1. Player Table</h2>
+
+    <table>
+        <tr>
+            <th>Player ID</th>
+            <th>Player Name</th>
+            <th>Runs</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Virat Kohli</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Rohit Sharma</td>
+            <td>105</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Shubman Gill</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>MS Dhoni</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>Joesal</td>
+            <td>150</td>
+        </tr>
+    </table>
+
+    <p><b>Highest Scorer: Joesal - 150 Runs</b></p>
+    <a href="#home">Back to Homepage</a>
+</section>
+
+<section id="rules">
+    <h2>2. Cricket Rules</h2>
+
+    <ol>
+        <li>Each team has 11 players.</li>
+        <li>One over contains 6 legal balls.</li>
+        <li>Runs are scored by running between wickets.</li>
+        <li>A batsman can get out in different ways.</li>
+        <li>The team with more runs wins the match.</li>
+    </ol>
+
+    <a href="#home">Back to Homepage</a>
+</section>
+
+<section id="gallery">
+    <h2>3. Cricket Gallery</h2>
+
+    <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=600" alt="Cricket ground">
+
+    <img src="https://images.unsplash.com/photo-1593766827228-8737b1cd147e?w=600" alt="Cricket match">
+
+    <img src="https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?w=600" alt="Cricket ball">
+
+    <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=600" alt="Cricket stadium">
+
+    <br>
+    <a href="#home">Back to Homepage</a>
+</section>
+
+<section id="legends">
+    <h2>4. Indian Cricket Legends</h2>
+
+    <h3>Virat Kohli</h3>
+    <p>Famous Indian batsman.</p>
+
+    <h3>Rohit Sharma</h3>
+    <p>Known for powerful batting.</p>
+
+    <h3>MS Dhoni</h3>
+    <p>Former Indian captain.</p>
+
+    <h3>Ravindra Jadeja</h3>
+    <p>Indian all-rounder.</p>
+
+    <h3>Shubman Gill</h3>
+    <p>Young Indian batsman.</p>
+
+    <a href="#home">Back to Homepage</a>
+</section>
+
+<section id="booking">
+    <h2>5. Book Cricket Tickets</h2>
+
+    <form>
+        <label>Name:</label><br>
+        <input type="text" required>
+        <br>
+
+        <label>Mobile Number:</label><br>
+        <input type="tel" pattern="[0-9]{10}" required>
+        <br>
+
+        <label>Email:</label><br>
+        <input type="email" required>
+        <br>
+
+        <label>Select Match:</label><br>
+        <select required>
+            <option value="">Select Match</option>
+            <option>India vs Australia</option>
+            <option>India vs England</option>
+            <option>India vs South Africa</option>
+            <option>India vs New Zealand</option>
+        </select>
+        <br>
+
+        <label>Match Date:</label><br>
+        <input type="date" required>
+        <br>
+
+        <label>Seat Type:</label><br>
+        <select>
+            <option>General</option>
+            <option>Premium</option>
+            <option>VIP</option>
+        </select>
+        <br>
+
+        <label>Number of Tickets:</label><br>
+        <input type="number" min="1" max="10" required>
+        <br>
+
+        <label>Payment Method:</label><br>
+        <select>
+            <option>UPI</option>
+            <option>Debit Card</option>
+            <option>Credit Card</option>
+            <option>Net Banking</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Book Ticket</button>
+        <button type="reset">Clear</button>
+    </form>
+
+    <br>
+    <a href="#home">Back to Homepage</a>
+</section>
+
+<footer>
+    <p>Joesal's Cricket World</p>
+    <a href="#home" style="color:white;">Back to Top</a>
+</footer>
+
+</body>
+</html>
